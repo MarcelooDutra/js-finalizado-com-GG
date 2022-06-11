@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(36, 36, 196);
+}
+
+header{
+    text-align: center;
+    font-style: italic;
+    color: aliceblue;
+}
+
+section{
+    background-color: azure;
+    padding: 10px;
+    box-shadow: 6px 6px 10px black;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: aliceblue;
+}

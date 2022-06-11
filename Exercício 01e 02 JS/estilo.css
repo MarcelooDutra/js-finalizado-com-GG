@@ -1,0 +1,37 @@
+body{
+background-color: lightseagreen;
+font: normal 15pt arial;/* fonte global , ou seja, de todas as letras da estrutura*/
+}
+
+header{
+text-align: center;
+font-style: italic;
+color: rgb(0, 0, 0);
+box-shadow: 4px 4px 8px black;
+border-radius: 15px;
+width: 500px;
+margin: auto;
+}
+
+section{
+background-color: azure;
+border-radius: 15px;/* arredonda as bordas*/
+padding: 10px;/* aumenta a area do raio*/
+width: 500px;/* fixa o atamanho da area*/
+box-shadow: 6px 6px 10px black;/*sombreamento das bordas*/
+margin: auto;/* centraliza a margem*/
+}
+
+div{
+    text-align: center;/*centralizar a img e texto*/
+    padding: 6px;/*afastar o texto da img*/
+}
+
+footer{
+font-style: italic;
+text-align: center;
+box-shadow: 3px 3px 6px black;
+border-radius: 10px;
+width: 500px;
+margin: auto;
+}

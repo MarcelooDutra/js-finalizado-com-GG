@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        header{
+            color: aliceblue;
+            text-align: center;
+            text-shadow: 5px 5px 5px red;/*text-shadow serve para colocar borda nas letras*/
+        }
+        
+        section{
+            background-color: aliceblue;
+            border-radius: 7px;
+            margin: auto;
+            width: 500px;
+            padding: 15px;
+            box-shadow: 5px 5px 6px rgb(221, 21, 21);
+        }
+    </style>
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
+</head>
+<body>
+   <header>
+       <h1>Tabuada</h1>
+   </header>
+   <section>
+       <div>
+           <p>Valor: <input type="number" name="txtv" id="txtv">
+            <input type="button" value="Res-Tabuada" onclick="gerar()"></p>
+       </div>
+       <div>
+           <select name="vlt" id="vlt" size="10"><!--este size serve para aumentar a area da tabuaba ou select...-->
+            <option>Valores da tabuada:</option><!--adiciona-se um option dentro do select para gerar um texto la dentro-->
+           </select>
+           
+       </div>
+   </section>
+
+   <!------------------------------------------------------------------------------------------------------------------------------------------>
+   <script>
+       function gerar(){
+           let val = document.getElementById('txtv')
+           let tab = document.getElementById('vlt')
+
+            if(val.value == 0){
+                window.alert('[ERROR] Adicione um numero')
+            }else{
+                let n = Number(val.value)
+                let v = 1
+                tab.innerHTML = ''
+                
+                //para que limpe a tabuada apos digitarmos outro numero basta chamar tab.innerHTML = '' colocar uma string vazia ... assim limpara a tabela.
+
+
+                while(v <= 10){
+                    
+                    //se ovalor for menor ou igual a 10(pq a tabuada vai ate a 10)...
+
+                let item = document.createElement('option')
+                
+                //crian-se um elemento de forma dinamica 
+
+                item.text = `${n} * ${v} = ${n*v}`
+                tab.appendChild(item)
+                
+                //estou adicionando o item na tabela
+
+                v++ //concateno ...
+                }
+            }
+
+       }
+   </script>
+</body>
+</html>

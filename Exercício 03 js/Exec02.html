@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02 js</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <header>
+    <h1>Data de nascimento</h1>
+   </header>
+   <section>
+       <div><!--nesta div e neste caso não precisa de um id pois não será necessario a tag dentro dela ja possui um id...-->
+           <p>Ano de Nascimento:
+         <input type="number" name="txtano" id="txtano"min=0><!--pode-se criar neste input um valor minino para que gere erro ao não digitarmos nada ou zero...-->
+         <input type="button" value="Verificar" onclick="verificar()"></p>Sexo:
+         <input type="radio" name="radsex" id="mas" checked><!--o cheked serve para que a opção ja fique marcada denteo da bolinha...-->
+         <label for="mas">Masculino</label>
+         <input type="radio" name="radsex" id="fem"><!--no name a referencia e da tag radius + o sexo ... porem mudei...tanto no masc como no fem o name tem que ser iguais pois não funciona a marcação se estiverem difierente ....-->
+         <label for="fem">Feminino</label>
+       </div>
+       <div id="res">
+        <strong>
+            <p>Resultado da Pesquisa:</p>
+        </strong>
+            <strong>
+                <p>&darr;</p>
+            </strong>
+       </div>
+   </section>
+   <footer>
+       <p>&sum; MarceloDutra</p>
+   </footer>
+   <script src="script.js"></script>
+   <script src="script02.js"></script>
+</body>
+</html>

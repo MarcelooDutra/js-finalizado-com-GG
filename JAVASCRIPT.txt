@@ -1,0 +1,51 @@
+ OBS: O id na estrutura html e sempre importante para o javascript para chmar na função essa ação!
+-------------------------------------------------------------------------------------------------------------------------
+Cada div recebe um id (identificação) de acordo com os dados dentro dela.
+------------------------------------------------------------------------------------------------------------------------
+OBS: Variaveis simples armazenam apenas um valor por vez. 
+Variaveis compostas armazenam um ou mais valores e uma mesma estrutura.
+-------------------------------------------------------------------------------------------------------------------------
+OBS: Uma array e composta por varios elementos...Onde possuem valores e indices(chaves).
+-------------------------------------------------------------------------------------------------------------------------
+OBS: Em um array o primeiro indice sempre será o 0... Ou seja, a contagem naõ começa pelo numero 1, e sim pelo numero 0.
+------------------------------------------------------------------------------------------------------------------------
+OBS: ° length - serve para dizer o comprimento de uma array... quanto elementos possui... e nao usa parenteses
+
+° O push()adiciona automaticamente um elemento na ultima posição de uma array...
+
+° O sort()arruma os elementos de forma crescente 
+
+Para adc um elemento podemos tb colocar o atributo seguido das chaves com o numero do indice e entre paranteses o elemento.
+---------------------------------------------------------------------------------------------------------------------------
+OBS: Para buscar valores dentro de uma array ou vetor utiliza-se o metodo ex: num.indexOf()... Ele retornará a chave 
+onde encontra-se este elemento...
+
+° Digitando-se um valor inexistente ele retornará -1 significa que nao foi encontrado nenhum valor informado...
+
+° cria-se uma variavel para aplicar o index.Of()
+--------------------------------------------------------------------------------------------------------------------------
+
+FUNÇÕES:
+
+°A função geralmente tem uma chamada, um conjunto de parametros, uma ação e um retorno...Mas as vezes uma função
+pode não ter um retorno ou parametros!
+
+° Nem sempre a chamada e verbalizada e sim automatizada...
+
+RESUMINDO:
+
+°Uma função é uma ação ela ocorre atraves de uma chamada ou em decorrencia de um evento...
+
+°Uma função pode conter parametros e retornar um resultado...
+
+° NaN = Não é um número!
+---------------------------------------------------------------------------------------------------------------------------
+° Para expecionar se há erros na estrutura, clica-se com o botão direito e opção expecionar no navegador...(mod depuração)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+° document.write('') uma ferramenta para imprimir na pagina web ... tanto atraves do vscode ,quanto direto na web , atraves do console...
+° e sempre que quisermos não sobrescrever que e natural desta ferramenta temos que utiliza-la com o sinal de atribuição += assim não substitui a palavra ja impressa ...
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+°ARVORE DOM :
+-Arvode DOM e a estrutura basica de um site , ou seja , tudo que tem dentro do window (uma ferrament globa) que vai desencadeando uma sequencia de ferramenta para que se forme um site... 

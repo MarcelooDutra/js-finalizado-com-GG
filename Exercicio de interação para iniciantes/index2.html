@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        input{
+            width: 100px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+       <p><input type="button" value="Somar" onclick="somar()"></p> 
+        <input type="number" name="dig1" id="dig1"><big>+</big>
+        <input type="number" name="dig2" id="dig2">
+        <div id="res" >Resultado:</div>
+    <script>
+        function somar(){
+            var dig1 = document.getElementById('dig1')
+            var dig2 = document.getElementById('dig2')
+            var res = document.getElementById('res')
+            var vl1 = Number(dig1.value)//converção texto pra numero...
+            var vl2 = Number(dig2.value)
+            var soma = vl1 + vl2
+            res.innerHTML = `O resultado da soma é: ${soma}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiando numeros</title>
+    <style>
+        body{
+            background-color: deepskyblue;
+        }
+        header{
+            text-align: center;
+            text-shadow: 5px 5px 5px greenyellow;
+            box-shadow: 6px 6px 6px greenyellow;
+            width: 500px;
+            margin: auto;
+        }
+        section{
+          width: 500px;
+          margin: auto;
+          box-shadow: 6px 6px 5px greenyellow;
+            padding: 5px;
+          border-radius: 6px;
+        }
+        div{
+            text-shadow: 5px 5px 5px greenyellow;
+        }
+        select{
+            width: 200px;/*para gerar epaço na area do select...*/
+        }
+        footer{
+            text-align: center;
+            text-shadow: 3px 3px 3px greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Copiando numeros</h1>
+    </header>
+    <section>
+        <div>
+            <p><strong>Numero(entre 1 e 100):</strong>
+                <input type="number" name="txtn" id="txtn">
+            <input type="button" value="Copiar" onclick="copiar()">
+            </p>
+            <p><select name="txtc" id="txtc" size="10"></select><br>
+                <input type="button" value="Encerrar" onclick="encerrar()"></p>
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <strong>
+            <p>&copy;Curso em video</p>
+        </strong>
+    </footer>
+    <script src="interação.js"></script>
+</body>
+</html>

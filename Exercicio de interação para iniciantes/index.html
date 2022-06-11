@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revendo script com gustavo</title>
+    <style>
+        div{
+            font: normal 15pt arial;
+            color: aliceblue;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;/*line-height serve para deixar algum elemento no meio da tela*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado" onclick="clicar()">
+        clicar
+    </div>
+    <script>
+        var qua = document.getElementById('quadrado')
+        qua.addEventListener('mouseclick', clicar)
+        qua.addEventListener('mouseenter', entrou)
+        qua.addEventListener('mouseout', saiu)
+
+        function clicar(){
+        qua.innerText = 'clicou'
+        qua.style.backgroundColor = 'blue'
+        }
+
+        function entrou(){
+            qua.innerText = 'entrou'
+            qua.style.backgroundColor = 'green'
+        }
+
+        function saiu(){
+            qua.innerText = 'saiu'
+            qua.style.backgroundColor = 'red'
+        }
+
+    </script>
+</body>
+</html>
